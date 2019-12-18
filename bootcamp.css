@@ -1,0 +1,278 @@
+/* CSS Document*/
+body{
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"MS Pゴシック","MS PGothic","sans-serif";
+}
+/*header*/
+header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: rgba(0,0,0,0,5);
+}
+
+.header-container{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-container ul{
+    display: flex;
+}
+.header-container li{
+    margin-right: 20px;
+}
+.header-container li:last-child　{
+    margin-right: 0;
+}
+.header-container a{
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+.header-container a:hover{
+    opacity: 0.7;
+}
+
+/*main*/
+.keyvisual{
+    height: 600px;
+    background-image: url(https://i.pinimg.com/originals/cd/37/60/cd37606e90ff04aa8bb69d59a60ac899.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.keyvisual-container{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 02px 5px rgba(225,225,225,5);
+}
+
+/*タイトル*/
+.keyvisual-container h1{
+    font-weight: bold;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+/*サブタイトル*/
+.keyvisual-container h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+/*descriptionのスタイル*/
+.keyvisual-container .keyvisual-description{
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+
+/*日付のスタイル*/
+.keyvisual-container .keyvisual-data{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*場所のスタイル*/
+.keyvisual-container .keyvisual-prace{
+    font-size: 18px;
+}
+
+/* about */
+.about{
+    background-image: url(http://cdn.inspirationhut.net/wp-content/uploads/2012/12/1312.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.about-container{
+    color: #fff;
+    text-align: center;/*ブロックコンテナ内の行の揃え位置・均等割付*/
+    padding: 80px 0; /*要素の内側の余白*/
+    line-height: 28px;/*行の高さを指定*/
+    max-width: 1000px;
+    margin: 0 auto;/*margin:要素の外側の余白、margin 0 auto:ブロック要素の左右中央寄せ*/
+}
+/*aboutのタイトル*/
+.about-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px rgba(225,225,225,5);
+}
+/* news */
+.news{
+    background-image: url(https://i1.wp.com/abrittonphotography.com/wp-content/uploads/2017/12/Smoke-Bomb-Photography-Ideas.jpg?w=564&ssl=1);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.news-container{
+    padding: 80px 0;
+}
+.news-container h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: rgba(225,225,225,5);
+}
+
+.news-container ul{
+    display: flex;
+    justify-content: center;/*フレックスアイテムの主軸方向の揃え位置を指定する*/
+}
+/* ニュースのコンテンツのブロックを作成 */
+.news-container li{
+    width: 280px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.news-container li:last-child{
+    margin-right: 0;
+}
+/* 写真が入るイメージでブロックを作る */
+.news-container .news-image{
+    widows: 280px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+.news-container li p{
+    padding-top: 10px;
+    font-size: 16px;
+}
+/* ここまで写真のブロック */
+
+/* video */
+.video{
+    background-image: url(https://i.pinimg.com/originals/f3/9b/f2/f39bf2e1ac14b8f511a5d7e4cb2cd48d.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+/* 四角のサイズ */
+.video-container{
+    padding: 80px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* 見出しの設定 */
+.video-container h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px rgba(225,225,225,5);
+}
+/* コンテンツを真ん中に寄せる */
+.video-container ul{
+    display: flex;
+    justify-content: center;
+}
+/* ボックスが大きくなったよ */
+/* 動画を入れるボックス */
+.video-container li{
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+}
+/* last childは資料を見て確認してね */
+.video-container li:last-child{
+    margin-right: 0;
+}
+
+.video-container li iframe{
+    width: 400px;
+    height: 200px;
+}
+.history{
+    background-color: black;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+/* historyのタイトル */
+.history-container h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px rgba(225,225,225,5);
+}
+/* historyのリスト設定 */
+.history-container ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*フレックスアイテムを単一行に押し込むか、複数行に折り返しても良いかを指定,
+    wrapは複数行に分割される*/
+}
+/*historyリンクの設定*/
+.history-container a{
+    display: block;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    background-color: #0f22c7;
+    border-radius: 3px;/*border-radius:角の丸さ*/
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;/*テキストの装飾*/
+    text-shadow: 0 2px 5px rgba(225,225,225,5);
+}
+.history-container a:hover{
+    opacity: 0.8;
+}
+/* historyのimageの余白設定 */
+.history-container .history-image{
+    color: #fff;
+}
+/* .history-imageの最後のliの余白を０にする */
+.history-image li:last-child{
+    margin-right: 0;
+}
+.access{
+    background-color: #111;
+}
+.access-container h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px rgba(225,225,225,5);
+}
+.access-container .access-map{
+    width: 100%;
+    height: 500px;
+}
+.access-container .access-map iframe{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    height: 80px;
+    line-height: 80px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
